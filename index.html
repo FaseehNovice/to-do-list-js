@@ -1,48 +1,46 @@
-<!--First, we make a <div> and give it an id of "todo-container",
-to act as a container for our todo list.
-We create another <div> and give it an id of "header".
-Inside of the <div> we create an <h1> tag with the title "To-Do List".
-Then, inside of the <div id="todo-form"> create an <input> element.
-This will be used for the new task in which the user writes the name of the task.
-We then create a <button> tag with an id of "input-button" for our 
-"Add" button to add our task to the list.
-Right beneath that, we create an <h2> tag with the title "Task List"
-along with a <ul> unordered list element, and give it an id of "list-container" 
-this is where we will display each task.-->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>To Do List</title>
-</head>
-<body>
-
+  <head>
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
     <div id="todo-container">
-        <div id="header">
-            <h1>To Do List</h1>
-        </div>
+      
+      <div id="header">
+        <h1>To Do List</h1>
+      </div>
 
-        <div id="todo-form">
-            <input type="text" class="input-item" name="input-box" id="input-box" placeholder="Add Task"/>
-            <button id="input-button" onclick="addTask()">Add</button>
-        </div>
+      
+      <div id="todo-form">
+        <input
+          type="text"
+          class="input-item"
+          name="input_box"
+          id="input-box"
+          placeholder="Add Task"
+        />
 
-        <h2>Task List</h2>
-        <ul id="list-container"></ul>
-    
-    </div>
+        
+        <button id="input-button" onclick="addTask()">Add</button>
+      </div>
 
-    <hr/>
-    <div id="counter-containers">
+      
+      <h2>Task List</h2>
+      <ul id="list-container"></ul>
+
+      <hr>
+
+      
+      <div class="counter-container">
         <div id="task-counters">
-            Completed: <span id="completed-counter">0</span> | Uncompleted:
-            <span id="uncompleted-counter">0</span>
+          Completed: <span id="completed-counter">0</span> | Uncompleted:
+          <span id="uncompleted-counter">0</span>
         </div>
+      </div>
     </div>
 
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
